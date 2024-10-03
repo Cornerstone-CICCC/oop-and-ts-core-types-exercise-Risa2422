@@ -3,7 +3,7 @@
 // The function should iterate through the array and log each value along with its type.
 function logValues(values) {
     values.forEach((item) => {
-        console.log(`${item} (${typeof item})`);
+        console.log(`${JSON.stringify(item)} (${typeof item})`);
     });
 }
 logValues([42, "Hello", true, { name: "Alice" }]);

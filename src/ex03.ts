@@ -1,9 +1,9 @@
 // Exercise: Write a function `logValues` that takes an array of any type of values (numbers, strings, booleans, etc.).
 // The function should iterate through the array and log each value along with its type.
 
-function logValues(values: unknown[]): void {
+function logValues(values: any[]): void {
   values.forEach((item) => {
-    console.log(`${item} (${typeof item})`);
+    console.log(`${JSON.stringify(item)} (${typeof item})`);
   });
 }
 
